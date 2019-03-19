@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if (!didYouFind) {
                         mbiText.setText(bmiCategory[bmiCategory.length - 1]);
+                        mbiText.setTextColor(colorArrays[1]);
+                        mbiValueText.setTextColor(colorArrays[1]);
                     }
                     mbiValueText.setText(mbiValue + "");
                 }
