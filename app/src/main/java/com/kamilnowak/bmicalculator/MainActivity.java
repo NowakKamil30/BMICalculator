@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                             mbiText.setText(bmiCategory[i]);
                             int temp = i;
                             if (temp >= colorArrays.length) {
-                                temp = temp - colorArrays.length;
+                                temp = temp - colorArrays.length+1;
                             }
                             mbiText.setTextColor(colorArrays[temp]);
                             mbiValueText.setTextColor(colorArrays[temp]);
@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     if (!didYouFind) {
                         mbiText.setText(bmiCategory[bmiCategory.length - 1]);
-                        mbiText.setTextColor(colorArrays[1]);
-                        mbiValueText.setTextColor(colorArrays[1]);
+                        mbiText.setTextColor(colorArrays[0]);
+                        mbiValueText.setTextColor(colorArrays[0]);
                     }
                     mbiValueText.setText(mbiValue + "");
                 }
